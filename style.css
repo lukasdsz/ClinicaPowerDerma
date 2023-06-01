@@ -1,7 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@300;400;500&family=Tangerine:wght@400;700&display=swap');
 
-
-h1{
-    font-family: 'Roboto', sans-serif;
+:root{
+    --black: #333;
+    --light-color: #cdaa7c;
+    font: 400;
+}
+*
+{
     font-family: 'Tangerine', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html
+{
+    font-size: 22px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #f8f6f6;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: #97091c;
+}
+h1
+{
+    font: 500;
+    border-radius: #333;
+
 }
