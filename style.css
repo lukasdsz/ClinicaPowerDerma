@@ -29,12 +29,12 @@ header
     top: 0;
     left: 0;
     right: 0;
-    background: #f8f6f6;
+    background: #f7a4a4;
     padding: 6px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: #97091c;
+    box-shadow: #131212;
 }
 h1
 {
