@@ -1,13 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@300;400;500&family=Tangerine:wght@400;700&display=swap');
 
-:root{
-    --black: #333;
-    --light-color: #cdaa7c;
-    font: 400;
-}
 *
 {
-    font-family: 'Tangerine', cursive;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,16 +10,13 @@
     border: none;
     outline: none;
     text-transform: capitalize;
-    transition: all .2s linear;
+    
 }
-html
-{
-    font-size: 22px;
-    overflow-x: hidden;
+html{
     scroll-behavior: smooth;
 }
-header
-{
+
+header{
     position: fixed;
     top: 0;
     left: 0;
@@ -36,9 +28,41 @@ header
     justify-content: space-between;
     box-shadow: #131212;
 }
-h1
-{
-    font: 500;
-    border-radius: #333;
 
+/* sessao section */
+section{
+    padding: 100px 0;
+}
+
+section .title{
+    font-family: 'Tangerine', cursive;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+/* sessao home */
+
+
+/* sessao about */
+
+
+/* sessao service */
+
+
+/* sessao partners */
+
+
+/* sessao contact */
+
+
+/* sessao footer */
+footer{
+    background: #131212;
+    padding: 22px 24px;
+    color: #f7a4a4;
+    text-align: center;
 }
