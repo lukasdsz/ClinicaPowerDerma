@@ -6,13 +6,15 @@
     <title>Clinica / PowerDerma</title>
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/libs/owl-carroussel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/libs/owl-carroussel/dist/assets/owl.theme.default.css" />
 </head>
 <body>
     <!--Sessão-->
-    <header>
-        <div class="center">
-            <a href="#logo" class="Logo">PowerDerma</a>
+    <header class="main__header">
+        <div class="container">
+            <a href="#logo" class="logo">PowerDerma</a>
 
             <nav class="navbar">
                 <a href="#home">Inicio</a>
@@ -22,9 +24,11 @@
                 <a href="#contact">Contato</a>
             </nav>
         </div>
-        <div>
+         <!-- <div style="">
             <i class="btn-menu"><ion-icon name="reorder-four"></ion-icon></i>
         </div>
+
+        -->
 
     </header>
 
@@ -44,13 +48,15 @@
         
 
         <div class="row">
-            <img src="image/imagClin.jpg" alt="">
+            <img src="./assets/images/imagClin.jpg" alt="">
         </div>
 
         <div class="container">
             <h3>Clinica e Doutora</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer condimentum luctus ipsum sit amet egestas. Praesent pharetra at enim sed tincidunt. Sed ante tellus, bibendum ac molestie non, dapibus vel ipsum. Integer a lectus nunc.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer condimentum luctus ipsum sit amet egestas. Praesent pharetra at enim sed tincidunt. Sed ante tellus, bibendum ac molestie non, dapibus vel ipsum. Integer a lectus nunc.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer condimentum luctus ipsum sit amet egestas.
+                 Praesent pharetra at enim sed tincidunt. Sed ante tellus, bibendum ac molestie non, dapibus vel ipsum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer condimentum luctus ipsum sit amet egestas.
+                 Praesent pharetra at enim sed tincidunt. Sed ante tellus, bibendum ac molestie non, dapibus vel ipsum.</p>
             <a href="#" class="btn">Leia mais</a>
         </div>
     </Section>
@@ -60,35 +66,46 @@
     <section class="service" id="service">
         <div class="container">
             <h2 class="title">Serviço</h2>
-           <div class="carousel">
-               <div class="card">
-                   <div class="box">
-                       <img src="image/imagLP.jpg" alt="">
-                       <h3 class="box-title">Limpeza de Pele</h3>
-                       <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatibus beatae iste aliquid laborum nobis.</p>
-                     <div class="card-links">
-                        <a href="#" class="btn">Leia mais</a>
-                     </div>
+           <div class="owl-carousel owl-theme">
+             
+                <div class="service__box">
+                    <img src="./assets/images/imagLP.jpg" alt="">
+                    <h3 class="box-title">Limpeza de Pele</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Ratione voluptatibus beatae iste aliquid laborum nobis.</p>
+
+                 <div class="card-links">
+                     <a href="#" class="btn">Leia mais</a>
                     </div>
-                    <div class="box">
-                        <img src="image/imagVent.jpg" alt="">
-                        <h3 class="box-title">Ventosaterapia</h3>
-                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatibus beatae iste aliquid laborum nobis.</p>
-                        <a href="#" class="btn">Leia mais</a>
-                     </div>
-                     <div class="box">
-                        <img src="image/Massag.jpg" alt="">
-                        <h3 class="box-title">Massagem</h3>
-                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatibus beatae iste aliquid laborum nobis.</p>
-                        <a href="#" class="btn">Leia mais</a>
-                     </div>
-                     <div class="box">
-                        <img src="image/imageGess.jpg" alt="">
-                        <h3 class="box-title">Gessoterapia</h3>
-                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatibus beatae iste aliquid laborum nobis.</p>
-                        <a href="#" class="btn">Leia mais</a>
-                     </div>
-               </div>
+                </div>
+
+                <div class="service__box">
+                    <img src="./assets/images/imagVent.jpg" alt="">
+                    <h3 class="box-title">Ventosaterapia</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Ratione voluptatibus beatae iste aliquid laborum nobis.</p>
+
+                    <a href="#" class="btn">Leia mais</a>
+                </div>
+
+                <div class="service__box">
+                    <img src="./assets/images/Massag.jpg" alt="">
+                    <h3 class="box-title">Massagem</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Ratione voluptatibus beatae iste aliquid laborum nobis.</p>
+                             
+                    <a href="#" class="btn">Leia mais</a>
+                </div>
+                     
+                <div class="service__box">
+                    <img src="./assets/images/imageGess.jpg" alt="">
+                    <h3 class="box-title">Gessoterapia</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Ratione voluptatibus beatae iste aliquid laborum nobis.</p>
+
+                    <a href="#" class="btn">Leia mais</a>
+                </div>
+            
            </div>
         </div>
     </section>
@@ -98,31 +115,83 @@
     <section class="partners" id="partners">
         <div class="container">
             <h2 class="title">Parceiros</h2>
-           <div class="carousel owl-carousel ">
-               <div class="card">
-                   <div class="box">
-                       <img src="image/imagN.jpg" alt="">
-                       <h3 class="box-title">Rayane</h3>
-                       <h4>nutricionista</h4>
-                     <div class="social-midia">
+            <div class="partners__box">
+            <div class="card__partners">
+
+                <img src="./assets/images/men.jpg" class="card__cover"/>
+
+                <div class="card__box">
+                    
+                    <div class="card__box__header">
+                        <strong>Lucas</strong>
+                        <span>Programador</span>
+                    </div>
+
+                    <div class="card__box__socials">
                         <a href="https://github.com/lukasdsz"
                         target="_blank"><ion-icon name="logo-instagram">Instagram</ion-icon></a>
                          <a href="#" 
                          target="_blank"><ion-icon name="logo-linkedin">LinkedIn</ion-icon></a>
-                     </div>
                     </div>
-                    <div class="box">
-                        <img src="image/imagP.jpg" alt="">
-                        <h3 class="box-title">Lucas</h3>
-                        <h4>programador</h4>
-                      <div class="social-midia">
-                         <a href="https://github.com/lukasdsz"
-                         target="_blank"><ion-icon name="logo-instagram">Instagram</ion-icon></a>
-                          <a href="#" 
-                          target="_blank"><ion-icon name="logo-linkedin">LinkedIn</ion-icon></a>
-                      </div>
-                     </div>
-               </div>
+                 </div>
+            </div>
+
+            <div class="card__partners">
+
+                <img src="./assets/images/men.jpg" class="card__cover"/>
+
+                <div class="card__box">
+                    <div class="card__box__header">
+                        <strong>Rayane</strong>
+                        <span>Nutricionista</span>
+                    </div>
+
+                    <div class="card__box__socials">
+                        <a href="https://github.com/lukasdsz"
+                        target="_blank"><ion-icon name="logo-instagram">Instagram</ion-icon></a>
+                         <a href="#" 
+                         target="_blank"><ion-icon name="logo-linkedin">LinkedIn</ion-icon></a>
+                    </div>
+                 </div>
+            </div>
+
+            <div class="card__partners">
+
+                <img src="./assets/images/men.jpg" class="card__cover"/>
+
+                <div class="card__box">
+                    <div class="card__box__header">
+                        <strong>Lucas dsz</strong>
+                        <span>Programador</span>
+                    </div>
+
+                    <div class="card__box__socials">
+                        <a href="https://github.com/lukasdsz"
+                        target="_blank"><ion-icon name="logo-instagram">Instagram</ion-icon></a>
+                         <a href="#" 
+                         target="_blank"><ion-icon name="logo-linkedin">LinkedIn</ion-icon></a>
+                    </div>
+                 </div>
+            </div>
+
+            <div class="card__partners">
+
+                <img src="./assets/images/men.jpg" class="card__cover"/>
+
+                <div class="card__box">                    
+                    <div class="card__box__header">
+                        <strong>Lucas dsz</strong>
+                        <span>Programador</span>
+                    </div>
+
+                    <div class="card__box__socials">
+                        <a href="https://github.com/lukasdsz"
+                        target="_blank"><ion-icon name="logo-instagram">Instagram</ion-icon></a>
+                         <a href="#" 
+                         target="_blank"><ion-icon name="logo-linkedin">LinkedIn</ion-icon></a>
+                    </div>
+                 </div>
+            </div>
            </div>
         </div>
     </section>
@@ -136,10 +205,14 @@
     </footer>
 
     <!--Js link-->
-    <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js" 
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" 
+    crossorigin="anonymous"></script>
+    
+    <script src="./assets/libs/owl-carroussel/dist/owl.carousel.min.js"></script>
+    
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>

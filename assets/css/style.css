@@ -13,18 +13,22 @@ html,body{
     scroll-behavior: smooth;
 }
 
-.center{
+
+.container{
     display: flex;
     flex-wrap: wrap;
     max-width: 1280px;
     margin:0 auto;
     padding:0 2%;
+    align-items: center;
 }
 
-header{
+.main__header{
     position: fixed;
     padding: 20px 24px;
     background: aliceblue;
+    width: 100%;
+    height: 80px;
 }
 
 .logo{
@@ -46,7 +50,7 @@ header{
     margin-right: 15px;
 }
 
-/* sessao section */
+/*-- SESSÃO SECTION --*/
 section{
     padding: 100px 0;
 }
@@ -61,32 +65,36 @@ section .title{
     position: relative;
 }
 
-/* sessao home */
+
+/*-- SESSÃO HOME --*/
+
 .home{
     background: #fa7979;
 }
 
 
-/* sessao about */
+/*-- SESSÃO ABOUT --*/
+
 .about{
     background: #f7a4a4;
 }
 
 
-/* sessao service */
+/*-- SESSÃO SERVICE --*/
 .service{
     background: #fa7979;
 }
 .service .container{
     justify-content: center;
 }
-.service. .carousel{
+.service .carousel{
     
 }
+
+
 .service .container .card{
     width: 100%;
     display: flex;
-    max-width: 1300px;
     padding: 15px;
 }
 .service .card .box{
@@ -126,46 +134,78 @@ section .title{
 }
 
 
-/* sessao partners */
-.partners{
-    background: #f7a4a4;
+
+/*-- SESSÃO PARTNERS -- */
+
+.card__partners { 
+    position: relative;
+    height: 450px;
+    width: 300px;
+    cursor: pointer;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 24px;
+    border-bottom:  4px solid purple;
 }
-.partners .container{
-    box-sizing: border-box;
+
+.card__partners .card__cover{
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    transition: .2s
 }
-.partners .card{
+
+/*-- CARD CONTENT --*/
+
+.card__box{
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    padding: 1rem;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.card__partners:hover .card__box{
+    bottom: 0;
+}
+
+.card__box .card__box__header{
     display: flex;
-    justify-content: center;
-    height: 100vh;
+    flex-direction: column;
     align-items: center;
-}
-.partners .card:hover{
-
-}
-.partners .card .box{
-    height: 500px;
-    margin: 50px;
-    box-shadow: #131212;
-    text-align: center;
-    
-}
-.partners img{
-    height: 500px;
-    width: 350px;
-    border-radius: 6px;
-
-}
-.partners .social-midia{
-
+    justify-content: center;
 }
 
-/* sessao contact */
+.card__box .card__box__header strong{
+    color: aquamarine;
+    font-size: 24px;
+}
+
+.card__box .card__box__header span{
+    color: #fa7979;
+    font-size: 18px;
+}
+
+.card__box__socials{
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+/*-- SESSÃO CONTACT --*/
 .contact{
     background: #fa7979;
 }
 
 
-/* sessao footer */
+/*-- SESSÃO FOOTER --*/
 footer{
     background: #131212;
     padding: 22px 24px;
