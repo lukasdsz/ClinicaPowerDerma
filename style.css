@@ -5,25 +5,45 @@
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    
+    box-sizing: border-box;   
 }
-html{
+
+html,body{
+    height: 100%;
     scroll-behavior: smooth;
+}
+
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin:0 auto;
+    padding:0 2%;
 }
 
 header{
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: #f7a4a4;
-    padding: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: #131212;
+    padding: 20px 24px;
+    background: aliceblue;
+}
+
+.logo{
+    width: 50%;
+}
+
+.navbar{
+
+    /*padding-top: 30;*/
+    width: 50%;
+    text-align: right;
+    
+}
+
+.navbar a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
 }
 
 /* sessao section */
@@ -42,17 +62,32 @@ section .title{
 }
 
 /* sessao home */
+.home{
+    background: #fa7979;
+}
 
 
 /* sessao about */
+.about{
+    background: #f7a4a4;
+}
 
 
 /* sessao service */
+.service{
+    background: #fa7979;
+}
+.service .container{
+    justify-content: center;
+}
+.service. .carousel{
+    
+}
 .service .container .card{
     width: 100%;
     display: flex;
-    max-width: 1100px;
-    /*padding: 15px;*/
+    max-width: 1300px;
+    padding: 15px;
 }
 .service .card .box{
     width: 100%;
@@ -72,7 +107,7 @@ section .title{
     width: 100%;
     height: 210px;
 }
-.service .box .text{
+.service .box .box-title{
     font-weight: 500;
     margin-bottom: 15px;
 }
@@ -89,10 +124,45 @@ section .title{
     background: #131212;
     color: #f7a4a4;
 }
-/* sessao partners */
 
+
+/* sessao partners */
+.partners{
+    background: #f7a4a4;
+}
+.partners .container{
+    box-sizing: border-box;
+}
+.partners .card{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.partners .card:hover{
+
+}
+.partners .card .box{
+    height: 500px;
+    margin: 50px;
+    box-shadow: #131212;
+    text-align: center;
+    
+}
+.partners img{
+    height: 500px;
+    width: 350px;
+    border-radius: 6px;
+
+}
+.partners .social-midia{
+
+}
 
 /* sessao contact */
+.contact{
+    background: #fa7979;
+}
 
 
 /* sessao footer */
