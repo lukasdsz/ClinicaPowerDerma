@@ -21,6 +21,11 @@ html,body{
     margin:0 auto;
     padding:0 2%;
     align-items: center;
+    justify-content: center;
+}
+
+.container .title{
+    text-align: center;
 }
 
 .main__header{
@@ -69,73 +74,99 @@ section .title{
 /*-- SESSÃO HOME --*/
 
 .home{
-    background: #fa7979;
+    background: #f8dbdb;
 }
 
 
 /*-- SESSÃO ABOUT --*/
 
 .about{
-    background: #f7a4a4;
+    background: #fff;
 }
 
 
 /*-- SESSÃO SERVICE --*/
 .service{
-    background: #fa7979;
+    background: #f8dbdb;
 }
+
 .service .container{
     justify-content: center;
 }
-.service .carousel{
+
+.service .owl-carousel{
     
 }
 
-
-.service .container .card{
-    width: 100%;
-    display: flex;
+.service__box .text{
     padding: 15px;
 }
-.service .card .box{
+
+.service .service__box{
     width: 100%;
     margin: 20px;
     border: 6px;
     overflow: hidden;
-    background: #f7a4a4;
+    background: #fff;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0. 2);
     cursor: default;
     transition: all 400ms ease;
     text-align: center;
+    border-radius: 6px;
+    /*padding: 15px;*/
 }
-.service .card:hover{
+
+.service .service__box:hover{
     box-shadow: 5px 5px 200px rgba(0, 0, 0, 0. 4);
 }
-.service .card img{
+
+.service .service__box img{
     width: 100%;
     height: 210px;
+
 }
-.service .box .box-title{
+
+.service .service__box .box-title{
     font-weight: 500;
     margin-bottom: 15px;
 }
-.service .box .btn{
+
+.service .service__box .btn{
     display: inline-block;
-    padding: 10px;
+    padding: 15px;
     margin-top: 10px;
-    color: azure;
-    border: 1px solid azure;
+    color: #fa7979;
+    border: 1px solid #fa7979;
     border-radius: 4px;
     transition: all 400ms ease;
 }
-.service .box .btn:hover{
-    background: #131212;
-    color: #f7a4a4;
+
+.service .service__box .btn:hover{
+    background: #f8dbdb;
+    color: #fa7979;
 }
 
 
 
 /*-- SESSÃO PARTNERS -- */
+
+.partners{
+    background: #fff;
+}
+
+
+.partners__box{
+    width: 100%;
+    display:flex;
+    position: relative;
+    left: 20px;
+    right: 20px;
+    margin: 20px;
+    border: 6px;
+    
+    
+    
+}
 
 .card__partners { 
     position: relative;
@@ -145,7 +176,7 @@ section .title{
     padding: 10px;
     overflow: hidden;
     border-radius: 24px;
-    border-bottom:  4px solid purple;
+    border-bottom:  4px solid rgb(245, 188, 221);
 }
 
 .card__partners .card__cover{
@@ -182,13 +213,13 @@ section .title{
 }
 
 .card__box .card__box__header strong{
-    color: aquamarine;
-    font-size: 24px;
+    color: #fff;
+    font-size: 32px;
 }
 
 .card__box .card__box__header span{
-    color: #fa7979;
-    font-size: 18px;
+    color:#f8dbdb;
+    font-size: 22px;
 }
 
 .card__box__socials{
@@ -197,6 +228,11 @@ section .title{
     align-items: center;
     justify-content: center;
     gap: 8px;
+}
+
+.card__box__socials a{
+    color: #fff;
+    font-size: 20px;
 }
 
 /*-- SESSÃO CONTACT --*/
