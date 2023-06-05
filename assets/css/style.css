@@ -17,7 +17,7 @@ html,body{
 .container{
     display: flex;
     flex-wrap: wrap;
-    max-width: 1280px;
+    max-width: 1300px;
     margin:0 auto;
     padding:0 2%;
     align-items: center;
@@ -163,8 +163,7 @@ section .title{
     right: 20px;
     margin: 20px;
     border: 6px;
-    
-    
+    gap: 24px;
     
 }
 
