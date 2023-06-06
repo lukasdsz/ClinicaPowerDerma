@@ -147,9 +147,9 @@ section .title{
     color: #fa7979;
 }
 
-/*-- SESSÃO AGENDE --*/
+/*-- SESSÃO AGEND --*/
 
-div .agend{
+.agend{
     background: #fff;
 }
 
@@ -199,8 +199,6 @@ div .agend{
     transition: .2s
 }
 
-/*-- CARD CONTENT --*/
-
 .card__box{
     position: absolute;
     left: 0;
@@ -245,16 +243,122 @@ div .agend{
     font-size: 20px;
 }
 
-/*-- SESSÃO CONTACT --*/
-.contact{
+
+/*-- SESSÃO FOOTER/CONTACT --*/
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
     background: #f8dbdb;
+    padding: 50px 100px;
+}
+footer .container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+}
+footer .container .foot_logo{
+    width: 50%;
+    height: auto;
+}
+footer .container .foot_about h2{
+    position: relative;
+    color: #131212;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+footer .container .foot_about p{
+    color:#111;
+}
+footer .container h2{
+    margin-bottom: 18px;
+}
+footer .container .foot_contact .contact_info{
+    position: relative;
+}
+footer .container .foot_contact .contact_info li{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
+}
+footer .container .foot_contact .contact_info li span{
+    color: #131212;
+    font-size: 20px;
+}
+footer .container .foot_contact .contact_info li a{
+    color: #131212;
+    text-decoration: none;
+}
+.copyright_text{
+    width: 100%;
+    background: #f8dbdb;
+    padding: 20px 100px 30px;
+    text-align: center;
+    color: #131212;
+    border: 1px solid rgba(0, 0, 0, 0. 20);
+}
+.copyright_text p{
+    
 }
 
+/*-- SESSÃO RESPONSIVE --*/
+@media (max-width: 900px){
+    .main__header{
+        padding: 20px 50px;
+    }
 
-/*-- SESSÃO FOOTER --*/
-footer{
-    background: #131212;
-    padding: 22px 24px;
-    color: #f7a4a4;
-    text-align: center;
+    #home{
+        padding: 150px 50px;
+        flex-direction: column-reverse;
+        padding-bottom: 0;
+    }
+    #home .title{
+        
+    }
+
+    #about, #service, #agend,
+    #reviews, #partners{
+        padding: 50pt;
+    }
+
+    #partners ..partners__box .card__partners{
+        grid-template-columns: repeat(2,1fr);
+    }
+    footer{
+        padding: 40px;
+    }
+    footer .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,2fr);
+        grid: 20px;
+        gap: 20px;
+    }
+    .copyright_text{
+        padding: 20px 40px 30px;
+    }
+
+}
+
+@media (max-width: 700px){
+    #home .container{
+        font-size: 3em;
+    }
+
+    #about .container, #service .container, 
+    #agend .container, #reviews .container, 
+    #partners .container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    footer .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid: 20px;
+        gap: 20px;
+    }
+    
+
 }

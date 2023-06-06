@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./assets/libs/owl-carroussel/dist/assets/owl.theme.default.css" />
 </head>
 <body>
+
     <!--Sessão-->
     <header class="main__header">
         <div class="container">
@@ -20,18 +21,17 @@
                 <a href="#home">Inicio</a>
                 <a href="#about">Sobre Nós</a>
                 <a href="#service">Serviço</a>
+                <a href="#reviews">Revios</a>
                 <a href="#partners">Parceiros</a>
-                <a href="#contact">Contato</a>
             </nav>
         </div>
         <div style="">
             <i class="btn-menu"><ion-icon name="reorder-four"></ion-icon></i>
         </div>
-
     </header>
 
+
     <!--Sessao home-->
-    
     <section class="home" id="home">
         <div class="container">
             <h1 class="title">Power Derma</h1>
@@ -39,6 +39,7 @@
             <a href="#" class="btn">Leia mais</a>
         </div>
     </section>
+
 
     <!--Sessão About-->
     <Section class="about" id="about">
@@ -63,8 +64,8 @@
         </div>
     </Section>
 
+
     <!--Sessao Service-->
-    
     <section class="service" id="service">
         <div class="container">
             <h2 class="title">Serviço</h2>
@@ -122,20 +123,23 @@
         </div>
     </section>
 
-    <!--Sessao Agende-->
 
-    <div class="agend">
-        <span class="title">Agende um de nossos serviços.</span>
-        <a href="#" class="btn">Agende Aqui</a>
-    </div>
+    <!--Sessao Agende-->
+    <header class="agend" id="agend">
+        <div class="container">
+            <span class="title">Agende um de nossos serviços.</span>
+            <a href="#" class="btn">Agende Aqui</a>
+        </div>
+    </header>
+
 
     <!--Sessao Review-->
     <Section class="reviews" id="reviews">
         <h1 class="title">Revios</h1>
     </Section>
 
-    <!--Sessao Partners-->
 
+    <!--Sessao Partners-->
     <section class="partners" id="partners">
         <div class="container">
             <h2 class="title">Parceiros</h2>
@@ -220,17 +224,42 @@
         </div>
     </section>
 
-    <!--Sessão Contact-->
-    <Section class="contact" id="contact">
-        <h1 class="title">Contato</h1>
-        <img src="./assets/images/logo2.png">
 
-    </Section>
-
-    <!--Sessão Footer-->
+    <!--Sessão Footer/Contact-->
     <footer>
-        <span><box-icon name='copyright'></box-icon> 2023 PowerDerma | Todos os direitos reservados.</span>
+        <div class="container">
+            <div class="foot_logo">
+                <img src="./assets/images/logo2.png" alt="">
+            </div>
+            <div class="foot_about">
+                <h2>Sobre Nós</h2>
+                <p>Bem-vindos à nossa clínica de estética, onde a beleza e o bem-estar se encontram! Aqui, oferecemos uma variedade 
+                    de tratamentos de ponta para cuidar da sua pele, corpo e mente. Nossa equipe altamente qualificada e apaixonada 
+                    está pronta para fornecer serviços personalizados e resultados excepcionais.</p>
+            </div>
+            <div class="foot_contact">
+                <h2>Contatos</h2>
+                <ul class="contact_info">
+                    <li>
+                        <span><i class="fa-solid fa-location-dot"></i></span><p><a 
+                            href="#">codominho chacara buritis rua 4 lote 0</a></p>
+                    </li>
+                    <li>
+                        <span><i class="fa-brands fa-whatsapp"></i></span><p><a 
+                            href="#">+55 61 90000 0000</a></p>
+                    </li>
+                    <li>
+                        <span><i class="fa-brands fa-instagram"></i></span><p><a 
+                            href="#">@powerderma</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
+    <div class="copyright_text">
+        <p><i class="fa-regular fa-copyright"></i> 2023 PowerDerma | Todos os direitos reservados.</p>
+    </div>
+
 
     <!--Js link-->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -239,10 +268,10 @@
     integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" 
     crossorigin="anonymous"></script>
 
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    
     <script src="./assets/libs/owl-carroussel/dist/owl.carousel.min.js"></script>
     
     <script src="./assets/js/script.js"></script>
+
+
 </body>
 </html>
