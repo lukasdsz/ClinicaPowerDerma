@@ -151,8 +151,35 @@ section .title{
 
 .agend{
     background: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
-
+.agend .container{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.agend .container .title{
+    color: #131212;
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: block;
+}
+.agend .container .btn{
+    background-color: #f8dbdb;
+    color: #131212;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.agend .container .btn:hover{
+    background-color: #131212;
+    color: #fa7979;
+}
 /*-- SESSÃO REVIEW --*/
 
 .reviews{
@@ -322,8 +349,12 @@ footer .container .foot_contact .contact_info li a{
         padding: 50pt;
     }
 
-    #partners ..partners__box .card__partners{
-        grid-template-columns: repeat(2,1fr);
+    #partners .partners__box{
+        flex-wrap: wrap;
+    }
+    #partners.card__partners{
+        flex-basis: 100%;
+        margin-bottom: 20px;
     }
     footer{
         padding: 40px;
@@ -341,8 +372,9 @@ footer .container .foot_contact .contact_info li a{
 
 }
 
-@media (max-width: 700px){
+@media screen and (max-width: 480px){
     #home .container{
+        width: 100%;
         font-size: 3em;
     }
 
@@ -352,6 +384,24 @@ footer .container .foot_contact .contact_info li a{
         grid-template-columns: repeat(1,1fr);
     }
     
+    #agend{
+        display: flex;
+    }
+    #agend .title{
+        font-size: 18px;
+    }
+    #agend .btn{
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+
+    #partners .partners__box{
+        flex-wrap: wrap;
+    }
+    #partners.card__partners{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+
     footer .container{
         width: 100%;
         display: grid;
