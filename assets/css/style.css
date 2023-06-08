@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@300;400;500&family=Tangerine:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Raleway:wght@400;700&family=Roboto:wght@300;400;500&display=swap');
 *
 {
     font-family: 'Roboto', sans-serif;
@@ -10,6 +9,7 @@
 
 html,body{
     height: 100%;
+    width: 100%;
     scroll-behavior: smooth;
 }
 
@@ -36,16 +36,14 @@ html,body{
     height: 80px;
 }
 
-.logo{
-    width: 50%;
+.logo img{
+    width: 60px;
+    height: auto;
 }
 
 .navbar{
-
-    /*padding-top: 30;*/
     width: 50%;
     text-align: right;
-    
 }
 
 .navbar a{
@@ -55,16 +53,21 @@ html,body{
     margin-right: 15px;
 }
 
+.btn-menu{
+    display: none;
+    cursor: pointer;
+}
+
 /*-- SESSÃO SECTION --*/
 section{
     padding: 100px 0;
 }
 
 section .title{
-    font-family: 'Tangerine', cursive;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
-    font-size: 100px;
-    font-weight: 500;
+    font-size: 50px;
+    font-weight: 700;
     margin-bottom: 60px;
     padding-bottom: 20px;
     position: relative;
@@ -75,7 +78,9 @@ section .title{
 /*-- SESSÃO HOME --*/
 
 .home{
-    background: #f8dbdb;
+    background-image: url(./assets/images/imagClin.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -94,9 +99,12 @@ section .title{
 .service .container{
     justify-content: center;
 }
-
-.service .owl-carousel{
-    
+.owl-carousel.owl-loaded {
+    display: block;
+}
+.owl-carousel {
+    width: 100%;
+    z-index: 1;
 }
 
 .service__box .text{
@@ -105,7 +113,7 @@ section .title{
 
 .service .service__box{
     width: 100%;
-    margin: 20px;
+    margin: 10px;
     border: 6px;
     overflow: hidden;
     background: #fff;
@@ -114,7 +122,7 @@ section .title{
     transition: all 400ms ease;
     text-align: center;
     border-radius: 6px;
-    /*padding: 15px;*/
+    border: 10px #fa7979;
 }
 
 .service .service__box:hover{
@@ -124,7 +132,6 @@ section .title{
 .service .service__box img{
     width: 100%;
     height: 210px;
-
 }
 
 .service .service__box .box-title{
@@ -278,15 +285,16 @@ footer{
     height: auto;
     background: #f8dbdb;
     padding: 50px 100px;
+    justify-content: center;
 }
 footer .container{
     width: 100%;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
 }
-footer .container .foot_logo{
-    width: 50%;
+footer .container .foot_logo img{
+    width: 200px;
     height: auto;
 }
 footer .container .foot_about h2{
@@ -334,6 +342,18 @@ footer .container .foot_contact .contact_info li a{
     .main__header{
         padding: 20px 50px;
     }
+    .navbar{
+        display: none;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .navbar a{
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .btn-menu{
+        display: block;
+    }
 
     #home{
         padding: 150px 50px;
@@ -348,6 +368,9 @@ footer .container .foot_contact .contact_info li a{
     #reviews, #partners{
         padding: 50pt;
     }
+    #service .service__box {
+        width: 100%;
+      }
 
     #partners .partners__box{
         flex-wrap: wrap;
@@ -373,6 +396,20 @@ footer .container .foot_contact .contact_info li a{
 }
 
 @media screen and (max-width: 480px){
+
+    .navbar{
+        display: none;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .navbar a{
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .btn-menu{
+        display: block;
+    }
+
     #home .container{
         width: 100%;
         font-size: 3em;
@@ -401,6 +438,7 @@ footer .container .foot_contact .contact_info li a{
     #partners.card__partners{
         flex-basis: 100%;
         margin-bottom: 20px;
+    }
 
     footer .container{
         width: 100%;
@@ -409,6 +447,4 @@ footer .container .foot_contact .contact_info li a{
         grid: 20px;
         gap: 20px;
     }
-    
-
 }
